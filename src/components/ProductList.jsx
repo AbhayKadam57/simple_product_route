@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./ProductList.scss";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -23,10 +24,12 @@ const ProductList = () => {
   return (
     <div className="product-list">
       {products?.map((item, id) => (
-        <div key={id} className="product">
-          <h3>{item.name}</h3>
-          <p>₹ {item.price}</p>
-        </div>
+        <Link to={`/product/${item.id}`}>
+          <div key={id} className="product">
+            <h3>{item.name}</h3>
+            <p>₹ {item.price}</p>
+          </div>
+        </Link>
       ))}
     </div>
   );
