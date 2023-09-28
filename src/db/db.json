@@ -1,17 +1,17 @@
 {
   "products": [
     {
-      "productkey": 12434353646464,
+      "id": 12434353646464,
       "name": "I-phone 15",
       "price": 112334
     },
     {
-      "productkey": 12434353643344,
+      "id": 12434353643344,
       "name": "I-phone 14",
       "price": 10000
     },
     {
-      "productkey": 124343536273773,
+      "id": 124343536273773,
       "name": "I-phone 13",
       "price": 5000
     }
