@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
-      <Link to="/productlist">ProductList</Link>
+      <Link to="/productlist" className="Button">
+        ProductList
+      </Link>
     </div>
   );
 };
